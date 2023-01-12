@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima - Arza</title>
+    
+    <!-- Agregar la referencia a Bootstrap en el head de tu HTML -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1 class="text-center my-5">Aplicación de clima</h1>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <!-- Div con el mensaje de bienvenida y las instrucciones -->
+            <div id="welcome-message" class="my-3 text-center">
+                <p>Bienvenido a nuestra aplicación de clima.</p>
+                <p>Ingresa el nombre de una ciudad para ver la información del clima actual.</p>
+            </div>
+            <!-- Formulario para buscar el clima de una ciudad -->
+            <form id="form" class="form-inline d-flex justify-content-center">
+                <label for="city" class="sr-only">Ciudad: </label>
+                <input type="text" id="city" name="city" class="form-control mr-3" placeholder="Ciudad">
+                <button type="submit" class="btn btn-success">Buscar</button>
+                <!-- Botón para actualizar la información del clima -->
+                <button type="button" id="refresh-button" class="btn btn-warning ml-3">Actualizar</button>
+            </form>
+            <!-- Div donde se mostrará la información del clima -->
+            <div id="weather-info" class="my-3"></div>
+            <!-- Div donde se mostrará el mensaje de error -->
+            <div id="error-message"></div>
+        </div>
+    </div>
+</div>
+
+    <!-- Incluir el archivo JavaScript -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

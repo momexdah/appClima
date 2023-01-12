@@ -1,0 +1,65 @@
+/* Archivo style.css */
+
+/* Estilo para el elemento div que muestra la información del clima */
+#weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    padding: 16px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  #weather-info img {
+    width: 128px;
+    height: 128px;
+  }
+  
+  #weather-info p {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Estilo para el formulario */
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  form label {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  
+  form input[type="text"] {
+    width: 200px;
+    height: 32px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  
+  form button[type="submit"] {
+    width: 80px;
+    height: 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  form button[type="button"] {
+    width: 100px;
+    height: 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2196f3;
+    color: #fff;
+  }
